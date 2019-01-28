@@ -1,0 +1,270 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px; 
+}
+
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* TAMANHO DAS LETRAS */
+h3 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: #7E459B;
+    font-weight: bold;
+}
+
+
+
+/* LAYOUT DE TODO CV Aprendendo */
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+.col-15 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+}
+.col-35 {
+    float: left;
+    width: 35%;
+    padding: 10px;
+}
+.col-40 {
+    float: left;
+    width: 40%;
+    padding: 10px;
+}
+.col-50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.col-60 {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+.col-65 {
+    float: left;
+    width: 65%;
+    padding: 10px;
+}
+.col-85 {
+    float: left;
+    width: 85%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+/* BOTÕES */
+.btn {
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.btn-white {
+    color: white;
+    background-color: rgba(126, 69, 155, 0.25);
+    border: 2px solid white;
+}
+    .btn-white:hover {
+        color: #7E459B;
+        background-color: white;
+    }
+
+.btn-roxo {
+    color: #7E459B;
+    border: 2px solid #7E459B;
+}
+    .btn-roxo:hover {
+        color: white;
+        background-color: #7E459B;
+    }
+
+
+
+/* CAPA DO MEU CV */
+#capa {
+    background: url(../img/bg1.jpg) no-repeat fixed;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+}
+.bg-color {
+    background-color: rgba(126, 69, 155, 0.78);
+    min-height: 650px;
+}
+.banner-info {
+    padding-top: 190px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.img-perfil {
+    height: 435px;
+}
+.capa__titulo {
+    padding-top: 165px;
+    margin-bottom: 0px;
+    font-size: 5rem; 
+    font-weight: bold; 
+    color: white;
+}
+.capa__subtitulo {
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 50px;
+}
+
+/* SEÇÃO SOBRE MIM */
+.sobre__titulo {
+    margin-top: 75px;
+    font-size: 4rem;
+    color: #C4C4C4;
+}
+
+.sobre-descricao, 
+.sobre-habilidades {
+    text-align: justify;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+.sobre-descricao__destaque {
+    color: #7E459B;
+    font-size: 2rem;
+}
+
+
+.sobre-habilidades {
+    margin-left: 7rem;
+}
+.sobre-habilidades__titulo {
+    font-size: 2rem;
+}
+.sobre-habilidades__lista {
+    font-size: 1.6rem;
+}
+
+
+/* REDES SOCIAIS */
+.rodape {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.img-icon {
+    height: 50px;
+    margin-top: 10px;
+}
+.redes-sociais__link {
+    display: inline-block;
+    width: 20%;
+    border-radius: 3rem;
+    background-color: #7E459B;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: white;
+}
+.redes-sociais__link__alt {
+    display: inline-block;
+    width: 20%;
+    border-radius: 3rem;
+    border: 2px solid #7E459B;
+    background-color: white;
+    padding: 2rem 0;
+    margin: 0 1rem;
+    text-align: center;
+    color: #7E459B;
+}
+
+.redes-sociais__img {
+    margin-bottom: .5rem;
+    height: 50px;
+}
+
+.redes-sociais__titulo {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 1.6rem;
+}
+
+.rodape__copy-texto {
+    color: #c4c4c4;
+    font-weight: lighter;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+
+/* MEDIA QUERIES */
+/* TABLET PAISAGEM */
+@media (max-width: 1024px){
+    html {
+        font-size: 8px;
+    }
+    .container {
+        max-width: 960px;
+        padding: 4rem;
+    }
+}
+
+/* TABLET PAISAGEM / CELULAR */
+@media (max-width: 768px){
+    html {
+        font-size: 8px;
+    }
+    .container {
+        max-width: 960px;
+        padding: 0 10rem;
+    }
+    .sobre-descricao, .sobre-habilidades {
+        width: 100%;
+    }
+    .sobre-habilidades {
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .redes-sociais__link {
+        width: 100%;
+        max-width: 200px;
+        padding: 2rem 0;
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .container {
+        padding: 0 5rem;
+    }
+}
